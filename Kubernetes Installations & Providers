@@ -1,0 +1,67 @@
+🔍 Installation Steps (Local + AWS): 📥 Install kind:
+
+curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.22.0/kind-linux-amd64
+chmod +x ./kind
+sudo mv ./kind /usr/local/bin/kind
+
+
+📦 Install kubectl (Ubuntu):
+sudo apt update
+sudo apt install -y apt-transport-https ca-certificates curl
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] \
+https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo apt update
+sudo apt install -y kubectl
+
+
+✅ Check versions:
+
+kind --version
+kubectl version --client
+
+
+🏗️ Create Your First Cluster!
+
+kind create cluster --name=new-cluster
+docker ps              # See containers
+kubectl get nodes      # See cluster nodes
+
+
+✅ Delete cluster:
+
+kind delete cluster --name=new-cluster
+
+
+⚙️ Create Multi-node Cluster with kind:
+✏️ Create config:
+
+# config.yml
+kind: cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  image: kindest/node:v1.31.2
+- role: worker
+  image: kindest/node:v1.31.2
+- role: worker
+  image: kindest/node:v1.31.2
+
+kind create cluster --name=my-cluster --config=config.yml
+kubectl get nodes
+
+
+🐳 Let’s Deploy a Pod!
+
+kubectl run nginx --image=nginx
+kubectl get pods
+kubectl describe pod nginx
+kubectl delete pod nginx
+
+
+🧹 Clean Up:
+
+kind delete cluster --name=my-cluster
+
+
+
