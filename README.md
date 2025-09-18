@@ -37,9 +37,13 @@ This repo is my personal journey of learning Kubernetes, documenting notes, YAML
 
 kubernetes-learning-series/
 │── basics-of-kubernetes/ # Introduction, Monolith vs Microservices, First Cluster
+
 │── advanced-kubernetes/ # ConfigMaps, StatefulSets, Networking
+
 │── deployments/ # Web stack & Bank app deployments
+
 │── bonus-guides/ # Extra must-know Kubernetes features
+
 
 yaml
 Copy code
