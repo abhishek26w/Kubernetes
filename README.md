@@ -5,6 +5,9 @@
 ![Status](https://img.shields.io/badge/Status-Active-success?style=flat)  
 
 A structured **Kubernetes Learning Series** — from the **basics** of clusters to **advanced deployments**.  
+
+![Kubernetes Banner](https://github.com/abhishek26w/Kubernetes/blob/main/Assets/Kubernetes%20banner.png.png)
+
 This repo is my personal journey of learning Kubernetes, documenting notes, YAML manifests, and real-world use cases. 🚀  
 
 ---
