@@ -65,5 +65,5 @@ Feel free to **fork this repo** and open a **pull request**.
 ## 📬 Connect with Me  
 
 - 🌐 Blog: [(https://dev-ops-diaries.hashnode.dev/)](#)  
-- 💼 LinkedIn: abhishek-waghmare-26-/)](#)  
+- 💼 LinkedIn: [abhishek-waghmare-26-/)]](https://www.linkedin.com/in/abhishek-waghmare-26-/)(#)  
 - 🐙 GitHub: [abhishek26w](#)  
