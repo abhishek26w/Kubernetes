@@ -36,13 +36,22 @@ This repo is my personal journey of learning Kubernetes, documenting notes, YAML
 ## 📂 Repository Structure  
 
 kubernetes-learning-series/
-│── basics-of-kubernetes/ # Introduction, Monolith vs Microservices, First Cluster
 
-│── advanced-kubernetes/ # ConfigMaps, StatefulSets, Networking
+## 📘 Basics of Kubernetes
+- [☸️ Kubernetes: From Monolith to Microservices & Spinning Up Your First Cluster!]
+- { https://shorturl.at/BxBvp }
 
-│── deployments/ # Web stack & Bank app deployments
+## 📗 Advanced Kubernetes
+- [☸️ Kubernetes Advanced Concepts — Explained Simply](https://your-blog-link.com)
 
-│── bonus-guides/ # Extra must-know Kubernetes features
+## 📙 Deployments
+- [🌟 Deploying a Heterogeneous Web Stack on Kubernetes](https://your-blog-link.com)
+- [🏦 Deploying a Bank App with Kubernetes: A Step-by-Step Guide](https://your-blog-link.com)
+
+## 📕 Bonus Guides
+- [🚀 Kubernetes Bonus Guide: Hidden Features Every DevOps Engineer Must Know — Part 1](https://your-blog-link.com)
+- [🚀 Kubernetes Bonus Guide: Hidden Features Every DevOps Engineer Must Know — Part 2](https://your-blog-link.com)
+
 
 
 yaml
