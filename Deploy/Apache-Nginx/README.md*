@@ -1,0 +1,29 @@
+📘 Kubernetes – Apache & NGINX Commands
+
+This file contains all commands required to deploy and access Apache and NGINX inside the webapps namespace.
+
+🚀 Apply Deployments & Services
+kubectl apply -f apache.yaml
+kubectl apply -f nginx.yaml
+kubectl get deploy,pods,svc -n webapps
+
+📦 Check Deployments
+kubectl get deployments -n webapps
+
+🔍 Check Pods (Wide View)
+kubectl get pods -n webapps -o wide
+
+🌐 Check Services
+kubectl get svc -n webapps
+
+🔌 Port-Forward to Access Apache
+kubectl port-forward svc/apache-service -n webapps 8080:80
+
+
+Access: http://localhost:8080
+
+🔌 Port-Forward to Access NGINX
+kubectl port-forward svc/nginx-service -n webapps 9090:80
+
+
+Access: http://localhost:9090
