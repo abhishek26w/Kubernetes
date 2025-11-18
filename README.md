@@ -42,14 +42,14 @@ kubernetes-learning-series/
 
 ## 📘 Basics of Kubernetes
 - [☸️ Kubernetes: From Monolith to Microservices & Spinning Up Your First Cluster!]
-- { https://shorturl.at/BxBvp }
+- (https://dev-ops-diaries.hashnode.dev/kubernetes-from-monolith-to-microservices-and-spinning-up-your-first-cluster)
 
 ## 📗 Advanced Kubernetes
-- [☸️ Kubernetes Advanced Concepts — Explained Simply](https://your-blog-link.com)
+- [☸️ Kubernetes Advanced Concepts — Explained Simply](https://dev-ops-diaries.hashnode.dev/kubernetes-advanced-concepts-explained-simply)
 
 ## 📙 Deployments
-- [🌟 Deploying a Heterogeneous Web Stack on Kubernetes](https://your-blog-link.com)
-- [🏦 Deploying a Bank App with Kubernetes: A Step-by-Step Guide](https://your-blog-link.com)
+- [🌟 Deploying a Heterogeneous Web Stack on Kubernetes](https://dev-ops-diaries.hashnode.dev/deploying-a-heterogeneous-web-stack-on-kubernetes)
+- [🏦 Deploying a Bank App with Kubernetes: A Step-by-Step Guide](https://dev-ops-diaries.hashnode.dev/deploying-a-bank-app-with-kubernetes-a-step-by-step-guide)
 
 ## 📕 Bonus Guides
 - [🚀 Kubernetes Bonus Guide: Hidden Features Every DevOps Engineer Must Know — Part 1](https://your-blog-link.com)
