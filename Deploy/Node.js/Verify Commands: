@@ -1,0 +1,25 @@
+# Check all resources in the namespace
+kubectl get all -n node-js
+
+# Check pods status
+kubectl get pods -n node-js
+kubectl describe pods -n node-js
+kubectl get pods -n node-js -o wide
+
+# Check deployment status
+kubectl get deployments -n node-js
+kubectl describe deployment node-js-deployment -n node-js
+
+# Check service status
+kubectl get services -n node-js
+kubectl describe service node-js-service -n node-js
+
+# Check logs of a specific pod
+kubectl logs -n node-js <pod-name>
+kubectl logs -n node-js -f <pod-name>  # follow logs
+
+# Check events in the namespace
+kubectl get events -n node-js
+
+# Verify pod readiness and status
+kubectl get pods -n node-js -w  # watch mode
