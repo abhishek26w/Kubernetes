@@ -4,7 +4,7 @@
 kubectl get ns |
 
 # 🚀 Deploy Node.js Application
-| kubectl apply -f nodejs-deployment.yml |
+| kubectl apply -f nodejs-deployment.yml 
 | kubectl get deployments -n node-js |
 kubectl get pods -n node-js |
 
