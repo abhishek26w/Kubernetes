@@ -1,4 +1,4 @@
-📘 Kubernetes – Apache & NGINX Commands
+📘 Kubernetes – Apache & NGINX Commands ( with Ingress )
 
 This file contains all commands required to deploy and access Apache and NGINX inside the webapps namespace.
 
