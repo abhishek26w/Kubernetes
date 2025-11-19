@@ -25,16 +25,16 @@ spec:
         ports:
           - containerPort: 8080
         env:
-        - name: SPRING_DATABASE_URL
+        - name: SPRING_DATASOURCE_URL
           valueFrom:
             configMapKeyRef:
               name: mysql-configmap
-              key: SPRING_DATABASE_URL
-        - name: SPRING_DTASOURCE_USERNAME
+              key: SPRING_DATASOURCE_URL
+        - name: SPRING_DATASOURCE_USERNAME
           valueFrom:
-            conggMapKeyRef:
-              name: mysql-secret
-              key: SPRING_DTASOURCE_USERNAME
+            configMapKeyRef:
+              name: mysql-configmap
+              key: SPRING_DATASOURCE_USERNAME
         - name: MYSQL_ROOT_PASSWORD
           valueFrom:
             secretKeyRef:
@@ -42,15 +42,15 @@ spec:
               key: MYSQL_ROOT_PASSWORD
         - name: SPRING_DATASOURCE_PASSWORD
           valueFrom:
-            secretKeyRef: 
+            secretKeyRef:
               name: mysql-secret
               key: SPRING_DATASOURCE_PASSWORD
         - name: MYSQL_DATABASE
           valueFrom:
-            configMapRef:
+            configMapKeyRef:
               name: mysql-configmap
-              key: MYSQL_DATABASE             
-       livenessProbe:
+              key: MYSQL_DATABASE
+        livenessProbe:
           httpGet:
             path: /actuator/health
             port: 8080
@@ -61,4 +61,4 @@ spec:
             path: /actuator/health
             port: 8080
           initialDelaySeconds: 10
-          periodSeconds: 5    
+          periodSeconds: 5
